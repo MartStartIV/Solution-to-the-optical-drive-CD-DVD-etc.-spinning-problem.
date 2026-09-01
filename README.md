@@ -1,4 +1,4 @@
-==========================Byte-level continuous reading system for optical drives=============================
+=================Byte-level continuous reading system for optical drives=====================
 
 -This system, executed via PowerShell, keeps the optical drive spinning continuously until the user manually closes it; this facilitates faster access to data stored on the discs and eliminates the drive's spin-up time—a delay that can otherwise exceed three seconds before the drive responds.
 
