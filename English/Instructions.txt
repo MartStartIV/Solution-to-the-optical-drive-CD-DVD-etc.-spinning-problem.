@@ -1,0 +1,2 @@
+1.-You simply need to have both files together for the system to work correctly, regardless of where you place them :)
+2.-Please report any issues if your CD/DVD/Blu-ray optical drive is incompatible with this solution.
