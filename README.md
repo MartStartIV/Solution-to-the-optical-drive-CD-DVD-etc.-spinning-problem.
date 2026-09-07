@@ -1,9 +1,50 @@
-=================Byte-level continuous reading system for optical drives=====================
+<div align="center">
+  <img src="https://shields.io" alt="Version 1.102">
+  <img src="https://shields.io" alt="Platform">
+  
+  <h1>💿 Byte-Level Continuous Reading System</h1>
+  <p><strong>Advanced optimization tool for optical drives and emulation performance.</strong></p>
+</div>
 
--This system, executed via PowerShell, keeps the optical drive spinning continuously until the user manually closes it; this facilitates faster access to data stored on the discs and eliminates the drive's spin-up time a delay that can otherwise exceed three seconds before the drive responds.
+<hr>
 
--To ensure it works correctly, simply run the .bat file; this launches PowerShell within the CMD interface itself, avoiding the need to load the separate PowerShell interface. The only requirement is that both files be located together for execution to work.
+### 🚀 System Overview
+This system, executed via **PowerShell**, keeps the optical drive spinning continuously until the user manually closes it. 
 
--Use this tool responsibly; I am not liable for any misuse that might cause damage to the unit. Although such damage is unlikely, it is worth mentioning this point.
+* **The Problem:** Standard optical drives suffer from a spin-up time delay that can otherwise exceed **three seconds** before the drive responds.
+* **The Solution:** By maintaining active byte-level contact, this script facilitates **significantly faster access** to data stored on the discs and completely eliminates mechanical spin-up latency.
 
-New update applied: V1.102
+---
+
+### ⚙️ Quick Start & Requirements
+
+To ensure it works correctly, simply run the `.bat` file. This launches PowerShell within the CMD interface itself, avoiding the need to load the separate PowerShell user interface.
+
+| Requirement | Description |
+| :--- | :--- |
+| **File Location** | Both the `.bat` and `.ps1` files **must be located together** in the same directory. |
+| **Execution** | Run the `.bat` file directly (it handles the PowerShell environment automatically). |
+
+---
+
+### ⚠️ Disclaimer & Responsibility
+
+<blockquote>
+  <strong>Use this tool responsibly.</strong><br>
+  I am not liable for any misuse that might cause damage to the unit. Although such damage is unlikely under normal hardware conditions, it is worth mentioning this point explicitly.
+</blockquote>
+
+---
+
+### 🪵 Changelog
+
+<details>
+  <summary><strong>Click to expand version history</strong></summary>
+  <br>
+  
+  * **v1.102 (Current)**
+    * Added advanced support for specialized emulators (including RPCS3 adaptation).
+  * **v1.101**
+    * Compatibility with PPSSPP and improved stability were included.
+</details>
+
