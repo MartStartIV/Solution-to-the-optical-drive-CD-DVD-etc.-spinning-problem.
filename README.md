@@ -5,3 +5,5 @@
 -To ensure it works correctly, simply run the .bat file; this launches PowerShell within the CMD interface itself, avoiding the need to load the separate PowerShell interface. The only requirement is that both files be located together for execution to work.
 
 -Use this tool responsibly; I am not liable for any misuse that might cause damage to the unit. Although such damage is unlikely, it is worth mentioning this point.
+
+New update applied: V1.102
