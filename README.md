@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="https://shields.io" alt="Version 1.102">
-  <img src="https://shields.io" alt="Platform">
   
   <h1>💿 Byte-Level Continuous Reading System</h1>
   <p><strong>Advanced optimization tool for optical drives and emulation performance.</strong></p>
