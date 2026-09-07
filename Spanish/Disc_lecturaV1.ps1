@@ -1,7 +1,7 @@
-﻿# --- CONFIGURACIÓN INICIAL 2026 (VERSIÓN v1.101 - PPSSPP SPECIAL UPDATE) ---
+﻿# --- CONFIGURACIÓN INICIAL 2026 (VERSIÓN v1.102 - PPSSPP & RPCS3 UPDATE) ---
 Clear-Host
 Write-Host "===============================================" -ForegroundColor Cyan
-Write-Host "   MONITOR DE UNIDAD ÓPTICA v1.101             " -ForegroundColor Cyan
+Write-Host "   MONITOR DE UNIDAD ÓPTICA v1.102             " -ForegroundColor Cyan
 Write-Host "===============================================" -ForegroundColor Cyan
 
 # Selección de Letra de Unidad
@@ -38,7 +38,7 @@ Write-Host "`nIniciando monitoreo especializado en $driveLetter..." -ForegroundC
 
 while($true) {
     try {
-        # SE AGREGA PPSSPP A LA LISTA DE PROCESOS
+        # SE AGREGA RPCS3 A LA LISTA DE PROCESOS JUNTO A LOS DEMÁS
         $emuladorActivo = Get-Process -Name "pcsx2", "pcsx2-qt", "ePSXe", "rpcs3", "PPSSPPWindows64", "PPSSPPWindows" -ErrorAction SilentlyContinue
         
         if ($emuladorActivo) {
@@ -79,13 +79,13 @@ while($true) {
             }
         }
 
-        # --- LÓGICA DE PULSO ADAPTATIVA (MEJORA PPSSPP) ---
+        # --- LÓGICA DE PULSO ADAPTATIVA (MEJORA PPSSPP & RPCS3) ---
         # Definimos límites temporales para el cálculo actual
         $limiteInfActual = $limiteInferior
         $limiteSupActual = $limiteSuperior
 
-        # Si el emulador es PPSSPP, aplicamos el rango especial solicitado
-        if ($emuladorActivo -and ($emuladorActivo.Name -like "*PPSSPP*")) {
+        # Si el emulador es PPSSPP o RPCS3, aplicamos el rango especial solicitado
+        if ($emuladorActivo -and ($emuladorActivo.Name -like "*PPSSPP*" -or $emuladorActivo.Name -like "*rpcs3*")) {
             $limiteInfActual = 0.15
             $limiteSupActual = 25.98
         }
